@@ -16,7 +16,8 @@ class MainActivity : AppCompatActivity() {
     private fun setListeners() {
         val views = listOf<View>(
             box_one_text, box_two_text, box_three_text,
-            box_four_text, box_five_text, constr_layout
+            box_four_text, box_five_text, constr_layout,
+            button_green, button_red, button_yellow
         )
 
         for (view in views)
@@ -30,6 +31,9 @@ class MainActivity : AppCompatActivity() {
             R.id.box_three_text -> v.setBackgroundResource(android.R.color.holo_green_light)
             R.id.box_four_text -> v.setBackgroundResource(android.R.color.holo_green_dark)
             R.id.box_five_text -> v.setBackgroundResource(android.R.color.holo_green_light)
+            R.id.button_green -> box_three_text.setBackgroundResource(R.color.my_green)
+            R.id.button_red -> box_four_text.setBackgroundResource(R.color.my_red)
+            R.id.button_yellow -> box_five_text.setBackgroundResource(R.color.my_yellow)
             else -> v.setBackgroundColor(Color.LTGRAY)
         }
     }

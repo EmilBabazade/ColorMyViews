@@ -8,4 +8,6 @@
     <string name="box_red">RED</string>
     <string name="box_yellow">YELLOW</string>
     <string name="box_green">GREEN</string>
+    <string name="this_is_some_info_and_more">This is some info and more</string>
+    <string name="this_some_more_info">This some more info</string>
 </resources>
